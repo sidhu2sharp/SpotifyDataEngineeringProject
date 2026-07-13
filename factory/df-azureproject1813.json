@@ -1,0 +1,15 @@
+{
+	"name": "df-azureproject1813",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "koreacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0a2d24e8-f05b-40b1-8de3-0b71117851c5",
+		"tenantId": "feb945a5-9c3a-4a49-8393-56e2b6f51410"
+	}
+}
