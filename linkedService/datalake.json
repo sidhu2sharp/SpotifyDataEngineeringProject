@@ -1,0 +1,10 @@
+{
+	"name": "datalake",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://sidazureproject.dfs.core.windows.net/"
+		}
+	}
+}
