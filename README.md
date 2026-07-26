@@ -6,7 +6,27 @@ Designed and implemented a scalable, metadata-driven ETL pipeline on Microsoft A
 
 ## Architecture
 
-Spotify API --> Azure Data Lake Storage (Bronze) --> Azure Data Factory (Incremental CDC Pipeline) --> Azure Databricks(Silver Transformations) --> Delta Live Tables (Gold Layer) --> Analytics Ready Star Schema
+```text
+Spotify API
+      │
+      ▼
+Azure Data Lake Storage (Bronze)
+      │
+      ▼
+Azure Data Factory
+(Incremental CDC Pipeline)
+      │
+      ▼
+Azure Databricks
+(Silver Transformations)
+      │
+      ▼
+Delta Live Tables
+(Gold Layer)
+      │
+      ▼
+Analytics-Ready Star Schema
+```
 
 ## Key Features
 
