@@ -72,7 +72,7 @@ Each dimension passes through staging tables before final publication, enabling 
 
 ![Delta Live Tables (DLT) Gold Pipeline Overview](screenshots/Delta%20Live%20Tables%20(DLT)%20Gold%20Pipeline%20Overview.png)
 
-***Figure 1.*** Azure Databricks Delta Live Tables (DLT) pipeline implementing the Gold layer of the Medallion Architecture. Staging tables are transformed into analytics-ready dimension (`dimUser`, `dimDate`, `dimTrack`) and fact (`factStream`) tables while enforcing built-in data quality expectations.
+***Figure 1.*** Azure Databricks Delta Live Tables (DLT) pipeline implementing the Gold layer of the Medallion Architecture. The pipeline materializes the analytics-ready star schema required for stream analysis by transforming staging tables into the `dimUser`, `dimDate`, `dimTrack`, and `factStream` tables while enforcing built-in data quality expectations. Additional dimensions such as `dimArtist` are processed in the Silver layer but are not materialized in the Gold layer because they are not directly required by the final analytical model.
 
 ---
 
