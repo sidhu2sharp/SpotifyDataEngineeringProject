@@ -134,4 +134,10 @@ Implemented Delta Live Table Expectations to validate incoming data and improve 
 - Reduced unnecessary data movement through CDC-based incremental loading
 - Designed reusable, production-inspired Azure data engineering workflows
 
+---
+
+# 👨‍💻 Author
+
+## Siddharth Ranganatha
+
   
